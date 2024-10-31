@@ -1,81 +1,73 @@
-/* Reset stylów */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    background-color: #f2f5fa;
-    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-}
-
-/* Nagłówek */
-header {
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f3f4f6;
+  }
+  
+  header {
     text-align: center;
-    margin-bottom: 30px;
-}
-
-h1 {
-    font-size: 2.5em;
-    color: #305f72;
-}
-
-p {
-    font-size: 1.1em;
-    color: #555;
-}
-
-/* Karty sekcji */
-.card {
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2em;
+    color: #2d3748;
+  }
+  
+  header p {
+    font-size: 1.2em;
+    color: #718096;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
     width: 90%;
     max-width: 700px;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    margin: 15px 0;
-    padding: 20px 25px;
+  }
+  
+  .section {
+    background-color: #e2e8f0;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 8px;
+    transition: 0.4s ease;
     cursor: pointer;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.card h2 {
-    font-size: 1.8em;
-    color: #305f72;
-}
-
-.content {
+  }
+  
+  .section h2 {
+    font-size: 1.5em;
+    color: #2c5282;
+  }
+  
+  .section .content {
+    display: none;
     margin-top: 10px;
-    overflow: hidden;
-    max-height: 0;
-    opacity: 0;
-    transition: max-height 0.6s ease, opacity 0.6s ease;
-}
-
-/* Aktywny stan treści */
-.card.active .content {
-    max-height: 400px;
-    opacity: 1;
-    padding-top: 10px;
-}
-
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    color: #305f72;
-}
-
-li {
-    margin-top: 8px;
-    color: #333;
-}
+    font-size: 1.1em;
+    color: #4a5568;
+  }
+  
+  .section.active {
+    background-color: #bee3f8;
+  }
+  
+  .section.active .content {
+    display: block;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  

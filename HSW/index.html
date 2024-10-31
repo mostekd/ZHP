@@ -1,65 +1,60 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harcerski System Wychowawczy</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harcerski System Wychowawczy</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Harcerski System Wychowawczy</h1>
-        <p>Interaktywna mapa myśli z głównymi informacjami o HSW</p>
-    </header>
-    <main>
-        <!-- Sekcja HSW -->
-        <section class="card" onclick="toggleSection(this)">
-            <h2>Harcerski System Wychowawczy (HSW)</h2>
-            <div class="content">
-                <p>Podstawowe elementy HSW to zasady, metoda oraz program. Tworzą one spójną podstawę rozwoju osobistego i społecznego w harcerstwie.</p>
-            </div>
-        </section>
 
-        <!-- Sekcja Zasady -->
-        <section class="card" onclick="toggleSection(this)">
-            <h2>Zasady Harcerskie</h2>
-            <div class="content">
-                <ul>
-                    <li><strong>Służba:</strong> Aktywne działanie na rzecz innych i świata.</li>
-                    <li><strong>Braterstwo:</strong> Wspólnotowość i wzajemny szacunek.</li>
-                    <li><strong>Samorealizacja:</strong> Rozwój własny przez naukę i doświadczenie.</li>
-                </ul>
-            </div>
-        </section>
+<header>
+  <h1>Harcerski System Wychowawczy</h1>
+  <p>Dowiedz się więcej o zasadach, metodzie i programie harcerskim.</p>
+</header>
 
-        <!-- Sekcja Metoda -->
-        <section class="card" onclick="toggleSection(this)">
-            <h2>Metoda Harcerska</h2>
-            <div class="content">
-                <p>Metoda określa sposoby realizacji zasad wychowawczych, jak partnerstwo i indywidualna praca w grupie.</p>
-            </div>
-        </section>
+<div class="container">
+  <!-- Podstawowe Składniki -->
+  <div class="section" id="skladniki">
+    <h2>Podstawowe Składniki</h2>
+    <div class="content">
+      <p>System obejmuje Zasady, Metodę i Program. Każdy z elementów wspiera rozwój harcerski poprzez działania i wartości.</p>
+    </div>
+  </div>
 
-        <!-- Sekcja Program -->
-        <section class="card" onclick="toggleSection(this)">
-            <h2>Program Harcerski</h2>
-            <div class="content">
-                <p>Program dostosowany jest do potrzeb członków drużyn, odpowiadając na lokalne wyzwania i potrzeby.</p>
-            </div>
-        </section>
+  <!-- Zasady -->
+  <div class="section" id="zasady">
+    <h2>Zasady</h2>
+    <div class="content">
+      <p>Podstawowe zasady to Służba, Braterstwo i Samorealizacja, mające na celu rozwój społeczny i osobisty.</p>
+    </div>
+  </div>
 
-        <!-- Sekcja Grupy Wiekowe -->
-        <section class="card" onclick="toggleSection(this)">
-            <h2>Grupy Wiekowe i Metodyka</h2>
-            <div class="content">
-                <ul>
-                    <li><strong>Zuchy:</strong> Zabawa jako metoda rozwoju.</li>
-                    <li><strong>Harcerze młodsi:</strong> Współzawodnictwo w grach.</li>
-                    <li><strong>Harcerze starsi:</strong> Wędrownictwo i samodzielne poznawanie świata.</li>
-                </ul>
-            </div>
-        </section>
-    </main>
-    <script src="./script.js"></script>
+  <!-- Metoda Harcerska -->
+  <div class="section" id="metoda">
+    <h2>Metoda Harcerska</h2>
+    <div class="content">
+      <p>Metoda opiera się na partnerstwie i dobrowolności. System zastępowy i współpraca z instruktorami rozwijają jednostkę w grupie.</p>
+    </div>
+  </div>
+
+  <!-- Program Harcerski -->
+  <div class="section" id="program">
+    <h2>Program Harcerski</h2>
+    <div class="content">
+      <p>Program drużynowy jest dostosowany do lokalnych potrzeb. Zawiera zadania i metodykę odpowiednie do grupy wiekowej.</p>
+    </div>
+  </div>
+
+  <!-- Grupy Wiekowe i Metodyka -->
+  <div class="section" id="grupy">
+    <h2>Grupy Wiekowe i Metodyka</h2>
+    <div class="content">
+      <p>Każda grupa wiekowa pracuje z odpowiednią metodą, od zabawy i gry po wędrownictwo i samowychowanie.</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
