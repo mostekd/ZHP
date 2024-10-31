@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harcerski System Wychowawczy</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Harcerski System Wychowawczy</h1>
+        <p>Interaktywna mapa myśli z głównymi informacjami o HSW</p>
+    </header>
+    <main>
+        <!-- Sekcja HSW -->
+        <section class="card" onclick="toggleSection(this)">
+            <h2>Harcerski System Wychowawczy (HSW)</h2>
+            <div class="content">
+                <p>Podstawowe elementy HSW to zasady, metoda oraz program. Tworzą one spójną podstawę rozwoju osobistego i społecznego w harcerstwie.</p>
+            </div>
+        </section>
+
+        <!-- Sekcja Zasady -->
+        <section class="card" onclick="toggleSection(this)">
+            <h2>Zasady Harcerskie</h2>
+            <div class="content">
+                <ul>
+                    <li><strong>Służba:</strong> Aktywne działanie na rzecz innych i świata.</li>
+                    <li><strong>Braterstwo:</strong> Wspólnotowość i wzajemny szacunek.</li>
+                    <li><strong>Samorealizacja:</strong> Rozwój własny przez naukę i doświadczenie.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sekcja Metoda -->
+        <section class="card" onclick="toggleSection(this)">
+            <h2>Metoda Harcerska</h2>
+            <div class="content">
+                <p>Metoda określa sposoby realizacji zasad wychowawczych, jak partnerstwo i indywidualna praca w grupie.</p>
+            </div>
+        </section>
+
+        <!-- Sekcja Program -->
+        <section class="card" onclick="toggleSection(this)">
+            <h2>Program Harcerski</h2>
+            <div class="content">
+                <p>Program dostosowany jest do potrzeb członków drużyn, odpowiadając na lokalne wyzwania i potrzeby.</p>
+            </div>
+        </section>
+
+        <!-- Sekcja Grupy Wiekowe -->
+        <section class="card" onclick="toggleSection(this)">
+            <h2>Grupy Wiekowe i Metodyka</h2>
+            <div class="content">
+                <ul>
+                    <li><strong>Zuchy:</strong> Zabawa jako metoda rozwoju.</li>
+                    <li><strong>Harcerze młodsi:</strong> Współzawodnictwo w grach.</li>
+                    <li><strong>Harcerze starsi:</strong> Wędrownictwo i samodzielne poznawanie świata.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
