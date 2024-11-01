@@ -65,7 +65,7 @@ p {
 /* Aktywny stan treści */
 .card.active .content {
     display: block;
-    max-height: 600px;
+    max-height: 1000px;
     opacity: 1;
     padding-top: 10px;
 }
