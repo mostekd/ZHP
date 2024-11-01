@@ -1,169 +1,222 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harcerski System Wychowawczy</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Harcerski System Wychowawczy</h1>
-        <p>Interaktywna mapa myśli z głównymi informacjami o HSW</p>
-    </header>
-    <main>
-        <section class="card" onclick="toggleSection(this)">
-            <h2>Misja ZHP</h2>
-            <div class="content">
-                <p>Misją ZHP jest wychowywanie młodego człowieka, czyli wspieranie go we wszechstronnym rozwoju i kształtowaniu charakteru przez stawianie wyzwań.</p>
-            </div>
-        </section>
-        <section class="card" onclick="toggleSection(this)">
-            <h2>Harcerski System Wychowawczy (HSW)</h2>
-            <div class="content">
-                <p>System ten jest nieodłącznym elementem tradycji harcerskiej i dorobkiem tysięcy instruktorów. Stanowi jedność trzech elementów: zasad wychowania, metody harcerskiej oraz programu.</p>
-                <p>Celem jest wszechstronny rozwój osobowy uczestników, a system działa efektywnie tylko wtedy, gdy zasady i metody są stosowane łącznie.</p>
-            </div>
-        </section>
-        <section class="card" onclick="toggleSection(this)">
-            <h2>Program</h2>
-            <div class="content">
-                <p>Dostosowany do lokalnych potrzeb i zasobów, składa się z zadań, metod realizacji i rozwiązań organizacyjnych. Wyróżnia się różne metodyki dla zuchów, harcerzy, harcerzy starszych, wędrowników i instruktorów.</p>
-            </div>
-        </section>
-        <section class="card" onclick="toggleSection(this)">
-            <h2>Zasady</h2>
-            <div class="content">
-                <p>Uznawane za drogowskaz obejmują służbę, braterstwo i samorealizację. Kładą nacisk na wartości społeczne, takie jak wolność, prawda i sprawiedliwość.</p>
-            </div>
-        </section>
-        <section class="card" onclick="toggleSection(this)">
-            <h2>Metoda</h2>
-            <div class="content">
-                <p>Opiera się na pracy z jednostką w grupie, partnerstwie między wychowankami a instruktorami oraz dobrowolnym zaangażowaniu.</p>
-            </div>
-        </section>
-        <section class="card" onclick="toggleSection(this)">
-            <h2>Inicjatywy</h2>
-            <div class="content">
-                <p>Rada Naczelna planuje powołać zespoły ds. metodyki i regulacji systemów stopni, mające na celu dalszy rozwój systemu wychowawczego w ZHP.</p>
-            </div>
-        </section>
-        <section class="card" onclick="toggleSection(this)">
-            <h2>Organizacja drużyn</h2>
-            <div class="content">
-                <p>Drużynowy (lub komendant) odpowiada za kierowanie drużyną. Jednostka musi prowadzić dokumentację programową oraz finansową.</p>
-            </div>
-        </section>
-        <section class="card" onclick="toggleSection(this)">
-            <h2>Podział na grupy</h2>
-            <div class="content">
-                <ul>
-                    <li><strong>Zuchy:</strong> 7 - 10 lat</li>
-                    <li><strong>Harcerze:</strong> 10 - 13 lat</li>
-                    <li><strong>Harcerze starsi:</strong> 13 - 16 lat</li>
-                    <li><strong>Wędrownicy:</strong> 15 - 21 lat</li>
-                    <li><strong>Instruktorzy:</strong> 21+</li>
-                    <li><strong>Starszyzna harcerska:</strong> 21+</li>
-                </ul>
-            </div>
-        </section>
-        <section class="card" onclick="toggleSection(this)">
-            <h2>Naramienniki</h2>
-            <div class="content">
-                <p>Naramiennik Starszoharcerski:</p>
-                <ul>
-                    <li>Instrument nieobowiązkowy</li>
-                    <li>Brak opiekuna</li>
-                    <li>Czas trwania: do 3 miesięcy</li>
-                    <li>Oznaczenie działania w zastępie starszoharcerskim</li>
-                </ul><br>
-                <p>Naramiennik Wędrowniczy:</p>
-                <ul>
-                    <li>Dodatkowe zadanie oparte na kodeksie wędrowniczym</li>
-                    <li>
-                        <p>Opiekun próby:</p>
-                        <ol>
-                            <li>Posiada naramiennik</li>
-                            <li>Wspiera w realizacji</li>
-                            <li>Odpowiada za ewaluację</li>
-                            <li>Wręcza naramiennik</li>
-                        </ol>
-                    </li>
-                    <li>Czas trwania: do 6 miesięcy</li>
-                    <li>Oznaczenie działania w zespole wędrowniczym</li>
-                </ul>
-            </div>
-        </section>
-        <section class="card" onclick="toggleSection(this)">
-            <h2>Wyzwania</h2>
-            <div class="content">
-                <p>Oznaczeniem jest symbol pióra na mundurze</p>
-                <p>Cele</p>
-                <ul>
-                    <li>Przekonanie wychowanków, że powinni pracować nad sobą</li>
-                    <li>Uświadomienie, że dzięki sile woli można zmienić się na leprze</li>
-                    <li>Sprzyja budowaniu poczucia własnej wartości.</li>
-                </ul>
-            </div>
-        </section>
-        <section class="card" onclick="toggleSection(this)">
-            <h2>Tropy</h2>
-            <div class="content">
-                <p>Zdobywanie tropu koordynuje:</p>
-                <ul>
-                    <li>Z: drużynowy i przyboczni</li>
-                    <li>H: zastępowy</li>
-                    <li>HS: zastępowy lub osoba przez niego wskazana</li>
-                    <li>W: wybrany członek patrolu/zastępu</li>
-                </ul>
-                <p>Cele</p>
-                <ul>
-                    <li>Rozwój umiejętności budowy wspólnoty</li>
-                    <li>Rozwój kompetencji interpersonalnych i umiejętności pracy w grupie</li>
-                    <li>Inicjowanie i wzmocnieni elementów metody harcerskiej</li>
-                </ul>
-            </div>
-        </section>
-        <section class="card" onclick="toggleSection(this)">
-            <h2>Próba Harcerza</h2>
-            <div class="content">
-                <p>Samodzielna realizacja</p>
-                <p>Realizowana bezpośredni po dołączeniu do ZHP</p>
-                <p>Zawiera wymagania do każdej z metodyk</p>
-                <p>Max. czas: 6 miesięcy</p>
-                <p>Cele</p>
-                <ul>
-                    <li>Poznanie harcerskich ideałów</li>
-                    <li>Poznanie zasad i zwyczajów drużyny i hacerstwa</li>
-                    <li>Poznanie wiadomości o ZHP</li>
-                </ul>
-            </div>
-        </section>
-        <section class="card" onclick="toggleSection(this)">
-            <h2>Gwiazdki zuchowe</h2>
-            <div class="content">
-                <p>Cel: stymulowanie wszechstronnego i równomiernego rozwoju kandydata we wszystkich sferach uwzględnionych w HSW</p>
-                <p>Nie stosuje się instytucji opiekuna, kluczową rolę pełnią rodzice</p>
-                <p>Rodzaje gwiazdek zuchowych:</p>
-                <ul>
-                    <li>Zuch ochoczy (6 - 8 lat)</li>
-                    <li>Zuch sprawny (8 - 9 lat)</li>
-                    <li>Zuch zaradny (9 - 10 lat)</li>
-                </ul>
-                <p>Cykl zdobywania gwiazdki:</p>
-                <ol>
-                    <li>Otwarcie próby</li>
-                    <li>Planowanie próby</li>
-                    <li>Realizacja zadań</li>
-                    <li>Weryfikacja</li>
-                    <li>Zamknięcie</li>
-                    <li>Obrzędowe przyznanie</li>
-                    <li>Otwarcie kolejnej próby na stopień</li>
-                </ol>
-            </div>
-        </section>
-    </main>
-    <script src="script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Harcerski System Wychowawczy</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Harcerski System Wychowawczy</h1>
+            <p>Interaktywna mapa myśli z głównymi informacjami o HSW</p>
+        </header>
+        <main>
+            <section class="card" onclick="toggleSection(this)">
+                <h2>Misja ZHP</h2>
+                <div class="content">
+                    <p>Misją ZHP jest wychowywanie młodego człowieka, czyli wspieranie go we wszechstronnym rozwoju i kształtowaniu charakteru przez stawianie wyzwań.</p>
+                </div>
+            </section>
+            <section class="card" onclick="toggleSection(this)">
+                <h2>Harcerski System Wychowawczy (HSW)</h2>
+                <div class="content">
+                    <p>System ten jest nieodłącznym elementem tradycji harcerskiej i dorobkiem tysięcy instruktorów. Stanowi jedność trzech elementów: zasad wychowania, metody harcerskiej oraz programu.</p>
+                    <p>Celem jest wszechstronny rozwój osobowy uczestników, a system działa efektywnie tylko wtedy, gdy zasady i metody są stosowane łącznie.</p>
+                </div>
+            </section>
+            <section class="card" onclick="toggleSection(this)">
+                <h2>Program</h2>
+                <div class="content">
+                    <p>Dostosowany do lokalnych potrzeb i zasobów, składa się z zadań, metod realizacji i rozwiązań organizacyjnych. Wyróżnia się różne metodyki dla zuchów, harcerzy, harcerzy starszych, wędrowników i instruktorów.</p>
+                </div>
+            </section>
+            <section class="card" onclick="toggleSection(this)">
+                <h2>Zasady</h2>
+                <div class="content">
+                    <p>Uznawane za drogowskaz obejmują służbę, braterstwo i samorealizację. Kładą nacisk na wartości społeczne, takie jak wolność, prawda i sprawiedliwość.</p>
+                </div>
+            </section>
+            <section class="card" onclick="toggleSection(this)">
+                <h2>Metoda</h2>
+                <div class="content">
+                    <p>Opiera się na pracy z jednostką w grupie, partnerstwie między wychowankami a instruktorami oraz dobrowolnym zaangażowaniu.</p>
+                </div>
+            </section>
+            <section class="card" onclick="toggleSection(this)">
+                <h2>Inicjatywy</h2>
+                <div class="content">
+                    <p>Rada Naczelna planuje powołać zespoły ds. metodyki i regulacji systemów stopni, mające na celu dalszy rozwój systemu wychowawczego w ZHP.</p>
+                </div>
+            </section>
+            <section class="card" onclick="toggleSection(this)">
+                <h2>Organizacja drużyn</h2>
+                <div class="content">
+                    <p>Drużynowy (lub komendant) odpowiada za kierowanie drużyną. Jednostka musi prowadzić dokumentację programową oraz finansową.</p>
+                </div>
+            </section>
+            <section class="card" onclick="toggleSection(this)">
+                <h2>Podział na grupy</h2>
+                <div class="content">
+                    <ul>
+                        <li><strong>Zuchy:</strong> 7 - 10 lat</li>
+                        <li><strong>Harcerze:</strong> 10 - 13 lat</li>
+                        <li><strong>Harcerze starsi:</strong> 13 - 16 lat</li>
+                        <li><strong>Wędrownicy:</strong> 15 - 21 lat</li>
+                        <li><strong>Instruktorzy:</strong> 21+</li>
+                        <li><strong>Starszyzna harcerska:</strong> 21+</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="card" onclick="toggleSection(this)">
+                <h2>Naramienniki</h2>
+                <div class="content">
+                    <p>Naramiennik Starszoharcerski:</p>
+                    <ul>
+                        <li>Instrument nieobowiązkowy</li>
+                        <li>Brak opiekuna</li>
+                        <li>Czas trwania: do 3 miesięcy</li>
+                        <li>Oznaczenie działania w zastępie starszoharcerskim</li>
+                    </ul><br>
+                    <p>Naramiennik Wędrowniczy:</p>
+                    <ul>
+                        <li>Dodatkowe zadanie oparte na kodeksie wędrowniczym</li>
+                        <li>
+                            <p>Opiekun próby:</p>
+                            <ol>
+                                <li>Posiada naramiennik</li>
+                                <li>Wspiera w realizacji</li>
+                                <li>Odpowiada za ewaluację</li>
+                                <li>Wręcza naramiennik</li>
+                            </ol>
+                        </li>
+                        <li>Czas trwania: do 6 miesięcy</li>
+                        <li>Oznaczenie działania w zespole wędrowniczym</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="card" onclick="toggleSection(this)">
+                <h2>Wyzwania</h2>
+                <div class="content">
+                    <p>Oznaczeniem jest symbol pióra na mundurze</p>
+                    <p>Cele</p>
+                    <ul>
+                        <li>Przekonanie wychowanków, że powinni pracować nad sobą</li>
+                        <li>Uświadomienie, że dzięki sile woli można zmienić się na leprze</li>
+                        <li>Sprzyja budowaniu poczucia własnej wartości.</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="card" onclick="toggleSection(this)">
+                <h2>Tropy</h2>
+                <div class="content">
+                    <p>Zdobywanie tropu koordynuje:</p>
+                    <ul>
+                        <li>Z: drużynowy i przyboczni</li>
+                        <li>H: zastępowy</li>
+                        <li>HS: zastępowy lub osoba przez niego wskazana</li>
+                        <li>W: wybrany członek patrolu/zastępu</li>
+                    </ul>
+                    <p>Cele</p>
+                    <ul>
+                        <li>Rozwój umiejętności budowy wspólnoty</li>
+                        <li>Rozwój kompetencji interpersonalnych i umiejętności pracy w grupie</li>
+                        <li>Inicjowanie i wzmocnieni elementów metody harcerskiej</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="card" onclick="toggleSection(this)">
+                <h2>Próba Harcerza</h2>
+                <div class="content">
+                    <p>Samodzielna realizacja</p>
+                    <p>Realizowana bezpośredni po dołączeniu do ZHP</p>
+                    <p>Zawiera wymagania do każdej z metodyk</p>
+                    <p>Max. czas: 6 miesięcy</p>
+                    <p>Cele</p>
+                    <ul>
+                        <li>Poznanie harcerskich ideałów</li>
+                        <li>Poznanie zasad i zwyczajów drużyny i hacerstwa</li>
+                        <li>Poznanie wiadomości o ZHP</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="card" onclick="toggleSection(this)">
+                <h2>Gwiazdki zuchowe</h2>
+                <div class="content">
+                    <p>Cel: stymulowanie wszechstronnego i równomiernego rozwoju kandydata we wszystkich sferach uwzględnionych w HSW</p>
+                    <p>Nie stosuje się instytucji opiekuna, kluczową rolę pełnią rodzice</p>
+                    <p>Rodzaje gwiazdek zuchowych:</p>
+                    <ul>
+                        <li>Zuch ochoczy (6 - 8 lat)</li>
+                        <li>Zuch sprawny (8 - 9 lat)</li>
+                        <li>Zuch zaradny (9 - 10 lat)</li>
+                    </ul>
+                    <p>Cykl zdobywania gwiazdki:</p>
+                    <ol>
+                        <li>Otwarcie próby</li>
+                        <li>Planowanie próby</li>
+                        <li>Realizacja zadań</li>
+                        <li>Weryfikacja</li>
+                        <li>Zamknięcie</li>
+                        <li>Obrzędowe przyznanie</li>
+                        <li>Otwarcie kolejnej próby na stopień</li>
+                    </ol>
+                </div>
+            </section>
+            <section class="card" onclick="toggleSection(this)">
+                <h2>Stopnie</h2>
+                <div class="content">
+                    <p>Cel: stymulowanie wszechstronnego i równomiernego rozwoju kandydata we wszystkich sferach uwzględnionych w HSW</p>
+                    <p>Rodzaje stopni</p>
+                    <ol>
+                        <li>Ochotniczka / Młodzik (10 - 12 lat)</li>
+                        <li>Tropicielka / Wywiadowca (12 -13 lat)</li>
+                        <li>Pionierka / Odkrywca (13 -15 lat)</li>
+                        <li>Samarytanka / Ćwik (14 - 16 lat)</li>
+                        <li>Harcerka Orla / Harcerz Orli (15 - 19 lat)</li>
+                        <li>Harcerka Rzeczypospolitej / Harcerz Rrzeczypospolitej ( 18 - 21 lat)</li>
+                    </ol>
+                    <p>Opiekun:</p>
+                    <uL>
+                        <li>Wspiera kandydata</li>
+                        <li>Ewaluuje przebieg próby wspólnie z kandydatem</li>
+                        <li>Wspólnie z kandydatem określa kształt próby w oparciu o ideę stopnia</li>
+                    </uL>
+                    <p>Cykl zdobywania stopnia:</p>
+                    <ol>
+                        <li>Planowanie próby</li>
+                        <li>Otwarcie próby</li>
+                        <li>Realizacja zadań</li>
+                        <li>Weryfikacja</li>
+                        <li>Decyzja o zamknięciu</li>
+                        <li>Zamknięcie</li>
+                        <li>Obrzędowe przyznanie</li>
+                        <li>Otwarcie kolejnej próby na stopień</li>
+                    </ol>
+                </div>
+            </section>
+            <section class="card" onclick="toggleSection(this)">
+                <h2>Sprawności</h2>
+                <div class="content">
+                    <p>Cele:</p>
+                    <uL>
+                        <li>Rozwijanie umiejętności</li>
+                        <li>Rozwijanie wiedzy i kształtowanie wyrobienia harcerskiego</li>
+                        <li>Stymulowanie rozwoju fizycznego i intelektualnego</li>
+                    </uL>
+                    <p>Cykl zdobywania sprawności:</p>
+                    <ol>
+                        <li>Wybór obszaru rozwoju</li>
+                        <li>Deklaracja kandydata - oszacowanie czasu</li>
+                        <li>Wyznaczenie opiekuna - nieobowiązkowe</li>
+                        <li>Realizacja próby</li>
+                        <li>Wniosek kandydata o przyznanie sprawności</li>
+                        <li>Decyzja kręgu rady, rady drużyny, organy demokracji dw</li>
+                        <li>Obrzędowe wręczenie</li>
+                    </ol>
+                </div>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
 </html>
